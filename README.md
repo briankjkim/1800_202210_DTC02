@@ -5,6 +5,8 @@
 * [Contents](#content)
 
 ## General Info
+Hi, my name is Kristopher and this is a test sentence. Nice to meet you
+	
 This browser based web application to ...
 
 Hi, my name is Brian. I'm excited about the project because it's fun!
