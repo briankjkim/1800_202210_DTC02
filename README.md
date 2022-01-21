@@ -7,6 +7,10 @@
 ## General Info
 Hi, my name is Kristopher and this is a test sentence. Nice to meet you
 	
+This browser based web application to ...
+
+Hi, my name is Arghavan. I'm here to share the conflict with you.
+
 ## Technologies
 Technologies used for this project:
 * HTML, CSS
