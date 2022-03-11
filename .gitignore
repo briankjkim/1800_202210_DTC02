@@ -1,4 +1,1 @@
 .DS_Store
-*.logs
-node_modules/
-firebaseAPI_DTC02.js
