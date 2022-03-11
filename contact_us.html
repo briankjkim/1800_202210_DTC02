@@ -24,7 +24,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Home</a>
+                <a class="navbar-brand" href="./main.html">Home</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,9 +41,9 @@
                                 Lineup / Queue Information
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Wait Time Estimates</a></li>
-                                <li><a class="dropdown-item" href="#">Join a lineup / queue</a></li>
-                                <li><a class="dropdown-item" href="#">Leave a lineup / queue</a></li>
+                                <li><a class="dropdown-item" href="wait_times_display_page.html">Wait Time Estimates</a></li>
+                                <li><a class="dropdown-item" href="join_queue.html">Join a lineup / queue</a></li>
+                                <li><a class="dropdown-item" href="join_queue.html">Leave a lineup / queue</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -79,40 +79,73 @@
             </div>
         </nav>
 
-        <!---End of Navigation Bar-->
-
-        <!---- Hero Jumbotron ---->
-
-        <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="./images/TEAM 02.png" alt="" width="200" height="200">
-            <h1 class="display-5 fw-bold">Welcome to Team 2's Application Welcome Page!</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Are you excited for the 2030 Vancouver Winter Olympics? So are we! To help tourists
-                    and local residents, Team 02 has developed a queue time magagement application to help you enjoy our
-                    beautiful city and its charming features.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Sign Up/Log In</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Learn More</button>
-                </div>
-            </div>
-        </div>
-
-        <!---- End of Hero Jumbotron ---->
         
-        <!---- Footer ---->
-        <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
-                </ul>
-                <p class="text-center text-muted">&copy; 2030 Winter Olympics Games Company, Inc</p>
-            </footer>
-        </div>
-       <!----End of Footer ---->
+        <br>
+        <h1>Contact Us Availibility Support Page</h1>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Subject</label>
+                <input type="text" class="form-control">
+            </div><br>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">How is your experience with long lineups?</label>
+                <select class="form-control" id="level">
+                    <option>Hard</option>
+                    <option>Moderate</option>
+                    <option>Easy</option>
+                </select>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">What season did you go to the Olympics?</label>
+                    <select class="form-control" id="season">
+                        <option>Fall</option>
+                        <option>Winter</option>
+                        <option>Spring</option>
+                        <option>Summer</option>
+                    </select>
+                    <br>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Was it a difficult season in the olympics?</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <br>
+                <!--Flooded-->
+                <label>Rate Level of Difficulty<span style="display:inline-block; width: 26pt;"></span></label>
+        
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flooded" value="Yes">
+                    <label>1-4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flooded" value="No">
+                    <label>5-10</label>
+                </div>
+        
+                <br>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-lg btn-primary pull-right" onclick="writeReview()">Submit</button>
+                </div>
+        </form>
+
+
+    </div>
+
+    <!---- Footer ---->
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="./main.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Register</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="contact_us.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2030 Winter Olympics Games Company, Inc</p>
+        </footer>
+    </div>
+    <!----End of Footer ---->
 </body>
 
 </html>
