@@ -9,7 +9,7 @@ function sayHello() {
                 .then(function (doc) {
                     var n = doc.data().name;
                     console.log(n);
-                    //$("#username").text(n);
+                    $("#username").text(n);
                     document.getElementById("username").innerText = n;
                 })
         } else {
@@ -17,7 +17,7 @@ function sayHello() {
         }
     });
 }
-//sayHello();
+sayHello();
 
 function writeWebcamData() {
     //this is an array of JSON objects copied from open source data
