@@ -1,12 +1,11 @@
 function writeReview() {
     console.log("in")
-    let Title = document.getElementById("title").value;
+    let Subject = document.getElementById("subject").value;
     let Level = document.getElementById("level").value;
     let Season = document.getElementById("season").value;
     let Description = document.getElementById("description").value;
-    let Flooded = document.querySelector('input[name="flooded"]:checked').value;
-    let Scrambled = document.querySelector('input[name="scrambled"]:checked').value;
-    console.log(Title, Level, Season, Description, Flooded, Scrambled);
+    let Rating = document.querySelector('input[name="rating"]:checked').value;
+    console.log(Subject, Level, Season, Description, Rating);
 
     firebase.auth().onAuthStateChanged(user => {
         if (user) {
@@ -19,12 +18,11 @@ function writeReview() {
                     db.collection("Reviews").add({
                         code: hikeID,
                         userID: userID,
-                        title: Title,
+                        subject: Subject,
                         level: Level,
                         season: Season,
                         description: Description,
-                        flooded: Flooded,
-                        scrambled: Scrambled,
+                        rating: Rating,
                         timestamp: firebase.firestore.FieldValue.serverTimestamp()
                     }).then(()=>{
                         window.location.href = "thanks.html"; //new line added

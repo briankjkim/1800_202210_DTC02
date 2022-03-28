@@ -102,10 +102,4 @@ function populateCardsDynamically() {
         })
 }
 
-populateCardsDynamically();
-//--------------------------------------------------------------
-// This function saves the current hikeID into the localStorage
-//--------------------------------------------------------------
-function setQueueData(id) {
-    localStorage.setItem('queueID', id);
-}
+
