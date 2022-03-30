@@ -69,11 +69,14 @@ async function readJSONwait_times() {
     const events = JSON.parse(data); //convert to JSON
     console.log(events);
     for (x of events) { //iterate thru each event
-        let name = x.name;
-        let status = x.is_open;
-        let wait_time = x.wait_time;
-        let update = x.last_updated;
-        console.log(name);
-        let details = "Name: " + name + "<br>" + "Status: " + status + "<br>" + "Wait Times: " + wait_time + "<br>" + "Last Updated: " + update;
+        db.collection("fake_events").add({
+            name: x.name,
+            status: x.is_open,
+            wait_time: x.wait_time,
+            last_update: x.last_updated,
+
+          //   details: details
+         })
     }
+
 }
