@@ -27,6 +27,7 @@
     <!-------------------------------------------->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
@@ -41,35 +42,70 @@
         <nav id="navbarPlaceholder"></nav>
         <!---End of Navigation Bar-->
 
-        <!---- Hero Jumbotron ---->
 
-        <div class="px-4 py-5 my-5 text-center">
-            <img class="d-block mx-auto mb-4" src="./images/TEAM 02.png" alt="" width="200" height="200">
-            <h1 class="display-5 fw-bold">Estimated Wait Times and Queueing Information</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">To get information on estimated wait times for lineups and queues for featured
-                    events and attractions, select "Lineup & Queue Wait times" below.
-                    To join or leave a queue, select "Join/Leave a Queue" on the next page </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a class="btn btn-primary" href="./join_queue.html" role="button">Lineup & Queue Wait times</a>
+        <br>
+        <h1>Contact Us - Support Page</h1>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Subject</label>
+                <input type="text" class="form-control" id="subject" place_holder="Subject">
+            </div><br>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">How would you find your overall experience with the lineups at this event/attraction?</label>
+                <select class="form-control" id="level">
+                    <option>Difficult</option>
+                    <option>Moderate</option>
+                    <option>Easy</option>
+                </select>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">What season did you go to the Olympics?</label>
+                    <select class="form-control" id="season">
+                       
+                        <option>Winter</option>
+                   
+                        <option>Summer</option>
+                    </select>
+                    <br>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Any additional information you would like to add</label>
+                    <textarea class="form-control" id="description" rows="3"></textarea>
+                </div>
+                <br>
+                <label>Would you plan on coming back to this Destination/Event in the future?<span style="display:inline-block; width: 26pt;"></span></label>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flooded" value="Yes">
+                    <label>Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="flooded" value="No">
+                    <label>No</label>
+                </div>
+
+                <br>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-lg btn-primary pull-right" onclick="writeReview()">Submit</button>
+                </div>
+        </form>
+
+
         </div>
 
-        <!---- End of Hero Jumbotron ---->
         <!---- Footer ---->
         <nav id="footerPlaceholder"></nav>
         <!----End of Footer ---->
+
         <!---------------------------------------------->
         <!-- Your own JavaScript functions go here    -->
         <!---------------------------------------------->
         <script src="./scripts/firebaseAPI_DTC02.js"></script>
         <script src="./scripts/skeleton.js"></script>
         <script src="./scripts/script.js"></script>
-<<<<<<< HEAD
+        <script src="./contact_us.js"></script>
 
-=======
->>>>>>> 71adf5b57b8a4aa4af235ae574b85ccbdc329683
     </body>
 
 </html>
