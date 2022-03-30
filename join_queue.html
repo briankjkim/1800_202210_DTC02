@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>My BCIT Project</title>
-    <meta name="comp1800 boilerplate code" content="my bcit project">
-    <meta name="author" content="BCIT">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>My BCIT Project</title>
+        <meta name="comp1800 boilerplate code" content="my bcit project">
+        <meta name="author" content="BCIT">
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    
+        <!-------------------------------------------------------->
+        <!-- Firebase 8 Library related CSS, JS, JQuery go here -->
+        <!-------------------------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+        <!-------------------------------------------->
+        <!-- Other libraries and styles of your own -->
+        <!-------------------------------------------->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
 
 <body>
 
@@ -43,7 +58,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row"><img src="./images/olympicvillage.jpg" height="100px" width="100px">Vancouver Olympic Cauldron
+                    <th scope="row"><img src="./images/olympicvillage.jpg" height="100px" width="100px">Vancouver
+                        Olympic Cauldron
                     </th>
                     <td>
                         <div class="d-grid gap-2 d-md-block">
@@ -56,7 +72,8 @@
                     <td><button type="button" class="btn btn-success">Open</button></td>
                 </tr>
                 <tr>
-                    <th scope="row"><img src="./images/olympicvillagemuseum.jpg" height="100px" width="100px">Olympic Village Museum
+                    <th scope="row"><img src="./images/olympicvillagemuseum.jpg" height="100px" width="100px">Olympic
+                        Village Museum
                     </th>
                     <td>
                         <div class="d-grid gap-2 d-md-block">
@@ -90,13 +107,13 @@
         <!---- Footer ---->
         <nav id="footerPlaceholder"></nav>
         <!----End of Footer ---->
-        
+
         <!---------------------------------------------->
         <!-- Your own JavaScript functions go here    -->
         <!---------------------------------------------->
         <script src="./scripts/firebaseAPI_DTC02.js"></script>
         <script src="./scripts/skeleton.js"></script>
-        <script src="./scripts/authentication.js"></script>
+        <!-- <script src="./scripts/authentication.js"></script> -->
         <script src="./scripts/script.js"></script>
         <script src="./scripts/join_queue.js"></script>
 

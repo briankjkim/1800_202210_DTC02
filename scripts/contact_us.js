@@ -24,11 +24,11 @@ function writeReview() {
                         description: Description,
                         rating: Rating,
                         timestamp: firebase.firestore.FieldValue.serverTimestamp()
-                    }).then(()=>{
+                    }).then(() => {
                         window.location.href = "thanks.html"; //new line added
                     })
                 })
-                   
+
         } else {
             // No user is signed in.
         }
