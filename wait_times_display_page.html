@@ -41,42 +41,32 @@
         <nav id="navbarPlaceholder"></nav>
         <!---End of Navigation Bar-->
         <!---- Estimated Wait Times Display ---->
-
-        <h3>Estimated Wait Times Display</h3>
-        <br><br>
-
-        <table class="table table-striped table-hover">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Name of Destination/Attraction</th>
-                    <th scope="col">Estimated Line Wait time </th>
-                    <th scope="col">Number of People in Queue</th>
-                    <th scope="col">Status (Open/Closed)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Vancouver Olympic Cauldron</th>
-                    <td>8 minutes</td>
-                    <td>10</td>
-                    <td>Open</td>
-                </tr>
-                <tr>
-                    <th scope="row">Olympic Village Museum</th>
-                    <td>10 minutes</td>
-                    <td>15</td>
-                    <td>Open</td>
-                </tr>
-                <tr>
-                    <th scope="row">Stanley Park</th>
-                    <td>3 minutes</td>
-                    <td>5</td>
-                    <td>Open</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="container">
+            <h1>Some popular Events!</h1>
+            <!-- Here is container for cards  -->
+            <div class="container">
+                <div id="events-go-here" class="row row-cols-auto">
+                </div>
+            </div>
+        </div>
         <!---- End of Estimated Wait Times Display ---->
+
+        <!-- Templates for general use, not displayed -->
+        <template id="eventCardTemplate">
+            <div class="card py-2 mx-2" style="width: 18rem;">
+                <img class="card-image card-img-top" src=" ..." alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p class="card-info">Display Event Info</p>
+                    <a class="btn btn-primary card-href">Get Details</a>
+                    <a class="btn btn-success card-href">Join Queue</a>
+                </div>
+            </div>
+        </template>
+
+
         <!---- Footer ---->
         <nav id="footerPlaceholder"></nav>
         <!----End of Footer ---->
