@@ -61,22 +61,4 @@ function displayCards(collection) {
 
 displayCards("events");
 
-async function readJSONwait_times() {
-    const response = await fetch(
-        'https://queue-times.com/parks.json'
-    )
-    const data = await response.text(); //get text file, string
-    const events = JSON.parse(data); //convert to JSON
-    console.log(events);
-    for (x of events) { //iterate thru each event
-        db.collection("fake_events").add({
-            name: x.name,
-            status: x.is_open,
-            wait_time: x.wait_time,
-            last_update: x.last_updated,
 
-          //   details: details
-         })
-    }
-
-}

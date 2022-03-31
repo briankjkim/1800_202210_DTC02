@@ -20,8 +20,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.0/firebase-ui-auth.css" />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
     <!-------------------------------------------->
     <!-- Other libraries and styles of your own -->
     <!-------------------------------------------->
@@ -40,32 +40,33 @@
         <!-- Navigation (Nav) bar -->
         <nav id="navbarPlaceholder"></nav>
         <!---End of Navigation Bar-->
-        <!---- Estimated Wait Times Display ---->
-        <div class="container">
-            <h1>Some popular Events!</h1>
-            <!-- Here is container for cards  -->
-            <div class="container">
-                <div id="events-go-here" class="row row-cols-auto">
-                </div>
-            </div>
-        </div>
-        <!---- End of Estimated Wait Times Display ---->
 
-        <!-- Templates for general use, not displayed -->
-        <template id="eventCardTemplate">
-            <div class="card py-2 mx-2" style="width: 18rem;">
-                <img class="card-image card-img-top" src=" ..." alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <p class="card-info">Display Event Info</p>
-                    <a class="btn btn-primary card-href">Get Details</a>
-                    <a class="btn btn-success card-href">Join Queue</a>
+        <!-- Begin Profile -->
+        <div class="container">
+            <h1>User Profile </h1>
+            <form>
+                <fieldset class="mb-3" id="personalInfoFields" disabled>
+                    <div class="form-group">
+                        <label >Name</label>
+                        <input type="text" id="nameInput" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label >Country</label>
+                        <input type="text" id="countryInput" class="form-control" placeholder="Enter your country of origin">
+                    </div>
+                    <div class="form-group">
+                        <label >Language</label>
+                        <input type="text" id="languageInput" class="form-control" placeholder="Enter your preferred language">
+                    </div>
+                </fieldset>
+                <div class="d-flex justify-content-end mt-5">
+                    <button type="button" class="btn btn-secondary" onclick="editUserInfo()">Edit</button>
+                    <span style="width: 10px"></span>
+                    <button type="button" class="btn btn-info" onclick="saveUserInfo()">Save</button>
                 </div>
-            </div>
-        </template>
-        <div>https://queue-times.com/</div>
+            </form>
+        </div>
+        <!-- End Profile -->
 
         <!---- Footer ---->
         <nav id="footerPlaceholder"></nav>
@@ -76,8 +77,7 @@
         <!---------------------------------------------->
         <script src="./scripts/firebaseAPI_DTC02.js"></script>
         <script src="./scripts/skeleton.js"></script>
-        <script src="./scripts/display_page.js"></script>
-
+        <script src="./scripts/profile.js"></script>
     </body>
 
 </html>
