@@ -1,7 +1,7 @@
 function populateCardsDynamically() {
     let eventCardTemplate = document.getElementById("eventCardTemplate");
     let eventCardGroup = document.getElementById("eventCardGroup");
-    
+
     db.collection("events").get()
         .then(allevents => {
             allevents.forEach(doc => {
@@ -17,9 +17,9 @@ function populateCardsDynamically() {
                 testeventCard.querySelector('.card-title').innerHTML = eventName;
                 testeventCard.querySelector('.card-code').innerHTML = eventCode;
                 testeventCard.querySelector('.card-status').innerHTML = eventStatus;
-                testeventCard.querySelector('.card-wait_time').innerHTML = eventWait_time;
-                testeventCard.querySelector('.card-current_queue').innerHTML = eventCurrent_queue + "&nbsp people at the moment";
-                testeventCard.querySelector('.card-text').innerHTML = eventDetails;                
+                testeventCard.querySelector('.card-wait_time').innerHTML = eventWait_time + "&nbsp Estimated wait time (in minutes)";
+                testeventCard.querySelector('.card-current_queue').innerHTML = eventCurrent_queue + "&nbsp People in queue at the moment";
+                testeventCard.querySelector('.card-text').innerHTML = eventDetails;
                 testeventCard.querySelector('a').onclick = () => setEventData(eventCode);
                 testeventCard.querySelector('img').src = `./images/${eventCode}.jpg`;
                 eventCardGroup.appendChild(testeventCard);
@@ -28,3 +28,6 @@ function populateCardsDynamically() {
         })
 }
 populateCardsDynamically();
+
+
+
