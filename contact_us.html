@@ -44,7 +44,7 @@
 
 
         <br>
-        <h1>Contact Us - Support Page</h1>
+        <h1>Review Queues / Contact Us Page</h1>
         <br>
         <form>
             <div class="form-group">
@@ -52,29 +52,33 @@
                 <input type="text" class="form-control" id="subject" place_holder="Subject">
             </div><br>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">How would you find your overall experience with the lineups at this event/attraction?</label>
-                <select class="form-control" id="level">
-                    <option>Difficult</option>
-                    <option>Moderate</option>
-                    <option>Easy</option>
+                <label for="exampleFormControlSelect1">What season of the Olympic Games is this review / request for?</label>
+                <select class="form-control" id="season">
+
+                    <option>Winter</option>
+
+                    <option>Summer</option>
+
                 </select>
                 <br>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">What season did you go to the Olympics?</label>
-                    <select class="form-control" id="season">
-                       
-                        <option>Winter</option>
-                   
-                        <option>Summer</option>
+                    <label for="exampleFormControlSelect1">How would you find your overall experience with the lineups
+                        at this event/attraction?</label>
+                    <select class="form-control" id="level">
+                        <option>Enjoyable</option>
+                        <option>Decent </option>
+                        <option>Difficult</option>
+                        <option>Prefer not to Answer</option>
                     </select>
-                    <br>
+
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Any additional information you would like to add</label>
                     <textarea class="form-control" id="description" rows="3"></textarea>
                 </div>
                 <br>
-                <label>Would you plan on coming back to this Destination/Event in the future?<span style="display:inline-block; width: 26pt;"></span></label>
+                <label>Would you plan on coming back to this Destination/Event in the future?<span
+                        style="display:inline-block; width: 26pt;"></span></label>
 
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="flooded" value="Yes">
@@ -87,7 +91,8 @@
 
                 <br>
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-lg btn-primary pull-right" onclick="writeReview()">Submit</button>
+                    <button type="button" class="btn btn-lg btn-primary pull-right"
+                        onclick="writeReview()">Submit</button>
                 </div>
         </form>
 
