@@ -7,7 +7,7 @@ function writeEvents() {
         current_queue: "0",
         status: "Open",
         wait_time: "0 Minute",
-        details: "Description goes here",
+        details: "A good place for Vancouver to hike!",
     })
     hikesRef.add({
         code: "EVENT5",
@@ -15,7 +15,7 @@ function writeEvents() {
         current_queue: "0",
         status: "Open",
         wait_time: "0 Minute",
-        details: "Description goes here",
+        details: "One of the most popular bridges in Vancouver!",
     })
     hikesRef.add({
         code: "EVENT6",
@@ -23,8 +23,9 @@ function writeEvents() {
         current_queue: "0",
         status: "Open",
         wait_time: "0 Minute",
-        details: "Description goes here",
+        details: "Feel the inspiration of Queen Elizabeth's Park!",
     })
+
 
 }
 
