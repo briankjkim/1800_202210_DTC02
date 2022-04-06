@@ -1,31 +1,31 @@
 function writeEvents() {
     //define a variable for the collection you want to create in Firestore to populate data
     var hikesRef = db.collection("events");
+    hikesRef.add({
+        code: "EVENT4",
+        name: "Grouse Mountain",
+        current_queue: "0",
+        status: "Open",
+        wait_time: "0 Minute",
+        details: "Description goes here",
+    })
+    hikesRef.add({
+        code: "EVENT5",
+        name: "Capilano Suspension Bridge Park",
+        current_queue: "0",
+        status: "Open",
+        wait_time: "0 Minute",
+        details: "Description goes here",
+    })
+    hikesRef.add({
+        code: "EVENT6",
+        name: "Queen Elizabeth Park",
+        current_queue: "0",
+        status: "Open",
+        wait_time: "0 Minute",
+        details: "Description goes here",
+    })
 
-    hikesRef.add({
-        code: "EVENT1",
-        name: "Vancouver Olympic Cauldron",
-        current_queue: "0",
-        status: "Open",
-        wait_time: "0 Minute",
-        details: "Description goes here"
-    });
-    hikesRef.add({
-        code: "EVENT2",
-        name: "Olympic Village Museum",
-        current_queue: "0",
-        status: "Open",
-        wait_time: "0 Minute",
-        details: "Description goes here"
-    });
-    hikesRef.add({
-        code: "EVENT3",
-        name: "Stanley Park",
-        current_queue: "0",
-        status: "Open",
-        wait_time: "0 Minute",
-        details: "Description goes here"
-    });
 }
 
 function displayCards(collection) {
