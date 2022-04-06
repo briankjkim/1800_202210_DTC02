@@ -1,14 +1,5 @@
 var currentUser //put this right after you start script tag before writing any functions.
 
-db.collection("events").where("status", "==", "Open")
-    .onSnapshot((querySnapshot) => {
-        var events = [];
-        querySnapshot.forEach((doc) => {
-            events.push(doc.data().name);
-        });
-    });
-
-
 function populateCardsDynamically() {
     let eventCardTemplate = document.getElementById("eventCardTemplate");
     let eventCardGroup = document.getElementById("eventCardGroup");
