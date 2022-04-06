@@ -2,28 +2,20 @@ function writeEvents() {
     //define a variable for the collection you want to create in Firestore to populate data
     var hikesRef = db.collection("events");
     hikesRef.add({
-        code: "EVENT4",
-        name: "Grouse Mountain",
+        code: "EVENT7",
+        name: "Brockton Point Totem Pole",
         current_queue: "0",
         status: "Open",
         wait_time: "0 Minute",
-        details: "A good place for Vancouver to hike!",
+        details: "An art inspired by Indigenuous people!",
     })
     hikesRef.add({
-        code: "EVENT5",
-        name: "Capilano Suspension Bridge Park",
+        code: "EVENT8",
+        name: "Vancouver Aquarium",
         current_queue: "0",
         status: "Open",
         wait_time: "0 Minute",
-        details: "One of the most popular bridges in Vancouver!",
-    })
-    hikesRef.add({
-        code: "EVENT6",
-        name: "Queen Elizabeth Park",
-        current_queue: "0",
-        status: "Open",
-        wait_time: "0 Minute",
-        details: "Feel the inspiration of Queen Elizabeth's Park!",
+        details: "Meet the friendliest creatures from the Aquarium!",
     })
 
 
