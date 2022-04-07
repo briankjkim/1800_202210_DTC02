@@ -54,7 +54,7 @@ function saveUserInfo(){
             //write/update the database
             currentUser.update({
                 name: userName,
-                age: userAge,
+                language: userLanguage,
                 city: userCity
             })
             .then(() => {
