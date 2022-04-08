@@ -46,6 +46,7 @@
         <div class="px-4 py-5 my-5 text-center">
             <img class="d-block mx-auto mb-4" src="./images/TEAM 02.png" alt="" width="200" height="200">
             <h1 class="display-5 fw-bold">Estimated Wait Times and Queueing Information</h1>
+            <h2 class="display-4 fw-bod">Greetings, <span id="name-goes-here"></span></h2>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">To get information on estimated wait times for lineups and queues for featured
                     events and attractions, select "Lineup & Queue Wait times" below.
@@ -55,8 +56,31 @@
                 </div>
             </div>
         </div>
-
         <!---- End of Hero Jumbotron ---->
+        <div class="container">
+            <h3>Some popular events!</h3>
+            <!-- Here is container for cards  -->
+            <div class="container">
+                <div id="events-go-here" class="row row-cols-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- Template -->
+        <!-- Templates for general use, not displayed -->
+        <template id="eventsCardTemplate">
+            <div class="card py-2 mx-2" style="width: 18rem;">
+                <img class="card-image card-img-top" src=" ..." alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a class="btn btn-primary card-href">Get Details</a>
+                </div>
+            </div>
+        </template>
+
+
         <!---- Footer ---->
         <nav id="footerPlaceholder"></nav>
         <!----End of Footer ---->
@@ -65,6 +89,7 @@
         <!---------------------------------------------->
         <script src="./scripts/firebaseAPI_DTC02.js"></script>
         <script src="./scripts/skeleton.js"></script>
+        <script src="scripts/main.js"></script>
     </body>
 
 </html>

@@ -1,4 +1,18 @@
-var currentUser //put this right after you start script tag before writing any functions.
+var currentUser;
+
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        currentUser = db.collection("users").doc(user.uid);   //global
+        console.log(currentUser);
+
+        populateCardsDynamically();
+    } else {
+        // No user is signed in.
+        console.log("No user is signed in");
+        window.location.href = "login.html";
+    }
+});
+
 
 function populateCardsDynamically() {
     let eventCardTemplate = document.getElementById("eventCardTemplate");
@@ -31,11 +45,11 @@ function populateCardsDynamically() {
 
         })
 }
+
+
 populateCardsDynamically();
 
-
 function addQueue(eventCode) {
-    console.log("inside");
     db.collection("events").where("code", "==", eventCode)
         .get()
         .then(queryevents => {
@@ -63,7 +77,6 @@ function addQueue(eventCode) {
 }
 
 function removeQueue(eventCode) {
-    console.log("inside");
     db.collection("events").where("code", "==", eventCode)
         .get()
         .then(queryevents => {
@@ -90,4 +103,15 @@ function removeQueue(eventCode) {
         });
 }
 
-// Live listener for changes in status
+
+function setEventData(id){
+    localStorage.setItem ('eventCode', id);
+    console.log("inside")
+}
+
+
+let eventCode = localStorage.getItem("eventCode");
+
+$("#add").click(addQueue(eventCode));
+$("#remove").on("click", removeQueue(eventCode));
+

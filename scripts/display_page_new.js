@@ -1,5 +1,6 @@
 var currentUser //put this right after you start script tag before writing any functions.
 
+
 function populateCardsDynamically() {
     let eventCardTemplate = document.getElementById("eventCardTemplate");
     let eventCardGroup = document.getElementById("eventCardGroup");
@@ -89,5 +90,11 @@ function removeQueue(eventCode) {
             console.log("Error getting documents: ", error);
         });
 }
+
+
+function setEventData(id){
+    localStorage.setItem ('eventCode', id);
+}
+
 
 // Live listener for changes in status
